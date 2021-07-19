@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sistem Notifikasi</title>
+</head>
+<body>
+	Sistem Notifikasi Menggunakan Socket.io dan Messaging Queue
+	<div id="container"></div>
+	<script src="https://cdn.socket.io/4.1.2/socket.io.min.js" integrity="sha384-toS6mmwu70G0fw54EGlWWeA4z3dyJ+dlXBtSURSKN4vyRFOcxd3Bzjj/AoOwY+Rg" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		var socket = io('http://localhost:5000');
+		socket.on('notifikasi baru', function (message) {
+			document.getElementById('container').innerHTML += '<p>' + message.isi + '</p>';
+		});
+	</script>
+</body>
+</html>

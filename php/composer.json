@@ -1,0 +1,12 @@
+{
+    "name": "fajrul/php",
+    "authors": [
+        {
+            "name": "Fajrul",
+            "email": "fajrul@docotel.com"
+        }
+    ],
+    "require": {
+        "viloveul/transport": "^1.0"
+    }
+}
